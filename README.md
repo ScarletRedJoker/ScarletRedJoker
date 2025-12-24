@@ -50,4 +50,4 @@ I'm a software developer and homelab enthusiast who loves building infrastructur
 
 ---
 
-💡 *"Sure, your iPhone is cool, but I got root"*
+💡 *"Your iPhone is cool sure; I have root"*
