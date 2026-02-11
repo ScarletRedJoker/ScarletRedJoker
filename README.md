@@ -81,9 +81,9 @@ Building a production-grade AI platform that runs on your own hardware:
 ## My Sites & Projects
 
 * 🌐 [Personal Portfolio](https://scarletredjoker.com)
-* 🎮 [RIG City Community](https://rigcity.gg)
-* 📺 [RIG City Stream](https://stream.rigcity.gg)
-* 🤖 [RIG City Bot](https://bot.rigcity.gg)
+* 🎮 [RIG City Community](https://rig-city.com)
+* 📺 [RIG City Stream](https://stream.evindrake.net)
+* 🤖 [RIG City Bot](https://bot.evindrake.net)
 * 🚀 [Nebula Command](https://github.com/ScarletRedJoker/Nebula-Command) (In Development)
 
 ## Current Focus
