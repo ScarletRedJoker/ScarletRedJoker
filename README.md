@@ -6,23 +6,24 @@ I'm a software developer and homelab enthusiast building **Nebula Command** — 
 
 ## 🚀 Current Project: Nebula Command
 
-Building a production-grade AI platform that runs on your own hardware:
+A production-grade, self-hosted AI platform and homelab command center that runs on my own hardware:
 
-- **Local-First AI**: Ollama + Stable Diffusion on dedicated GPU hardware with cloud fallback
-- **Unified Dashboard**: Next.js 14 interface for real-time monitoring and AI chat
-- **Distributed Architecture**: Cloud VPS (27 containers) + Local GPU workstation connected via Tailscale mesh
-- **Creator Tools**: Multi-platform streaming bots, Discord integration, AI content generation
-- **Full Observability**: Prometheus, Grafana, Loki for production-grade monitoring
+- **Jarvis AI Assistant**: 70+ tools, dual-agent orchestration, persistent memory, and a standalone MCP tool server — it deploys services, switches GPU modes, and manages infrastructure from chat
+- **Local-First AI**: Ollama, Stable Diffusion, and ComfyUI on dedicated GPU hardware, with policy-controlled cloud fallback (OpenAI)
+- **Unified Dashboard**: Next.js 14 dashboard with 120+ pages, 180+ API route groups, and a 260+ table PostgreSQL schema behind it
+- **Distributed Fleet**: Cloud VPS edge (30+ containers) + home servers + a GPU workstation VM, all meshed over Tailscale with agents, watchdogs, and self-healing deploy pipelines
+- **Creator Tools**: Discord bot (AI chat, music, moderation), multi-platform stream bot (Twitch/YouTube/Kick), media library automation
+- **Full Observability**: Prometheus, Grafana, Loki, plus a built-in verify/reconcile system and 180+ Vitest test files
 
-**Status**: Core foundation in active development — authentication, file uploads, AI routing, and chat interface
+**Status**: In production daily use — dashboard, bots, AI routing, fleet management, and observability are live; creative pipelines (video, 3D/XR) are in active development
 
 [→ View Nebula Command](https://github.com/ScarletRedJoker/Nebula-Command)
 
 ## What I'm Working With
 
-* 💻 **Current Focus**: Building Nebula Command's core MVP (Next.js 14, TypeScript, PostgreSQL, Ollama)
-* 🏠 **Homelab**: GPU passthrough setup, KVM/IPMI management, containerized infrastructure with Docker
-* 🤖 **AI Stack**: Local Ollama models, Stable Diffusion, ComfyUI, OpenAI integration
+* 💻 **Current Focus**: Hardening Nebula Command — self-healing infrastructure, AI capability routing (local vs cloud per feature), and creative generation pipelines
+* 🏠 **Homelab**: GPU passthrough, KVM/IPMI management, a multi-node Tailscale fleet, and containerized everything
+* 🤖 **AI Stack**: Local Ollama models, Stable Diffusion, ComfyUI, LiteLLM gateway, OpenAI integration
 * 🎨 **Side Projects**: Graphic design, community platforms, streaming automation
 * 🖥️ **OS Philosophy**: Ubuntu host with Windows VM for GPU-dependent workloads (gaming, Adobe Suite)
 * 🔓 **Principle**: Root access > walled gardens
@@ -52,31 +53,32 @@ Building a production-grade AI platform that runs on your own hardware:
 ![Caddy](https://img.shields.io/badge/-Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white)
 
 ### AI & ML
-![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat-square&logo=ai&logoColor=white)
+![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![Stable Diffusion](https://img.shields.io/badge/-Stable_Diffusion-FF6F00?style=flat-square&logo=ai&logoColor=white)
+![Stable Diffusion](https://img.shields.io/badge/-Stable_Diffusion-FF6F00?style=flat-square)
+![ComfyUI](https://img.shields.io/badge/-ComfyUI-1A1A1A?style=flat-square)
 
 ## Homelab Highlights
 
 ### 🎮 GPU Workstation Architecture
 * **Host**: Ubuntu 24.04 with KVM/QEMU
 * **GPU Passthrough**: NVIDIA RTX 3060 to Windows 11 VM
-* **AI Workloads**: Ollama (LLMs), Stable Diffusion, ComfyUI
+* **AI Workloads**: Ollama (LLMs), Stable Diffusion, ComfyUI — with on-demand wake/idle-park orchestration
 * **Game Streaming**: Sunshine/Moonlight for low-latency remote gaming
 * **Mode Switching**: Dynamic GPU allocation between AI inference, gaming, and productivity
 
-### 🐳 Cloud Infrastructure (27 Containers)
+### 🐳 Cloud & Fleet Infrastructure (30+ Containers)
 * **Reverse Proxy**: Caddy with automatic TLS
-* **Services**: Next.js dashboard, Discord bot, streaming bots, n8n automation
-* **Monitoring**: Prometheus, Grafana, Loki stack
-* **Mail Server**: Mailu (Postfix, Dovecot, Rspamd)
-* **Networking**: Tailscale mesh VPN connecting cloud + local nodes
+* **Services**: Next.js dashboard, Discord bot, stream bot, n8n automation, self-hosted Mailu email
+* **Monitoring**: Prometheus, Grafana, Loki stack + built-in verify/reconcile self-healing
+* **Fleet**: Cloud VPS edge, home media node, CPU inference node, and GPU VM — all agent-managed
+* **Networking**: Tailscale mesh VPN connecting every node, no port forwarding
 
 ### 🤖 AI Pipeline
-* **Local-First**: Ollama models preferred (zero marginal cost, privacy-first)
-* **Smart Fallback**: Automatic OpenAI routing when local GPU unavailable
-* **Model Management**: Download and switch between Llama 3, Mistral, CodeLlama
-* **Image Generation**: Local Stable Diffusion with DALL-E 3 cloud backup
+* **Local-First**: Ollama models preferred (zero marginal cost, privacy-first), routed per-feature between CPU and GPU nodes
+* **Smart Fallback**: Policy-controlled OpenAI routing when local GPU is unavailable
+* **Model Management**: Pull, switch, and monitor models from the dashboard or by asking Jarvis
+* **Image Generation**: Local Stable Diffusion / ComfyUI with DALL-E 3 cloud backup
 
 ## My Sites & Projects
 
@@ -84,20 +86,16 @@ Building a production-grade AI platform that runs on your own hardware:
 * 🎮 [RigCity Community](https://rig-city.com)
 * 📺 [Streambot](https://stream.evindrake.net)
 * 🤖 [Discordbot](https://bot.evindrake.net)
-* 🚀 [Nebula Command](https://github.com/ScarletRedJoker/Nebula-Command) (In Development)
+* 🚀 [Nebula Command](https://github.com/ScarletRedJoker/Nebula-Command)
 
 ## Current Focus
 
-🔨 **Building Nebula Command from the ground up:**
-- Phase 1: Core MVP (auth, file uploads, AI chat, settings) ✅ In Progress
-- Phase 2: Service orchestration and monitoring
-- Phase 3: Advanced features (Discord bot, streaming integration, GPU management)
+🔨 **Evolving Nebula Command beyond the MVP:**
+- ✅ Core platform: auth, AI chat, service orchestration, monitoring, bots, GPU management — live in production
+- 🔄 Now: self-healing fleet operations, per-feature AI capability routing, media library automation
+- 🔭 Next: creative pipelines (video, 3D/AR-VR generation), website design studio, deeper Jarvis autonomy
 
 💡 **Philosophy**: "Your iPhone is cool sure; I have root"
-
-## GitHub Stats
-
-![ScarletRedJoker's GitHub stats](https://github-readme-stats.vercel.app/api?username=ScarletRedJoker&show_icons=true&theme=radical)
 
 ---
 
