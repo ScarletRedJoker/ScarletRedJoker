@@ -17,7 +17,7 @@ A production-grade, self-hosted AI platform and homelab command center that runs
 
 **Status**: In production daily use — dashboard, bots, AI routing, fleet management, and observability are live; creative pipelines (video, 3D/XR) are in active development
 
-[→ View Nebula Command](https://github.com/ScarletRedJoker/Nebula-Command)
+[→ View Nebula Command](https://github.com/ScarletRedJoker/Nebula-Command-Community)
 
 ## What I'm Working With
 
